@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d1117">
+  <title>Android Security Lab — مختبر تحليل تطبيقات أندرويد</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="mark">ASL</span><div><b>مختبر أندرويد الأمني</b><small>Android Security Lab</small></div></div>
+    <div class="xp" id="xp">0 نقطة</div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button data-v="apk" class="on">APKTool</button>
+    <button data-v="smali">Smali</button>
+    <button data-v="security">تحليل الأمان</button>
+    <button data-v="spy">التجسس</button>
+    <button data-v="telegram">Telegram</button>
+    <button data-v="editor">المحرر</button>
+    <button data-v="perms">الصلاحيات</button>
+    <button data-v="lessons">الدروس</button>
+    <button data-v="quiz">الاختبارات</button>
+  </nav>
+
+  <main>
+    <section id="v-apk" class="view on"></section>
+    <section id="v-smali" class="view"></section>
+    <section id="v-security" class="view"></section>
+    <section id="v-spy" class="view"></section>
+    <section id="v-telegram" class="view"></section>
+    <section id="v-editor" class="view"></section>
+    <section id="v-perms" class="view"></section>
+    <section id="v-lessons" class="view"></section>
+    <section id="v-quiz" class="view"></section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="sheet">
+      <div class="sheet-head"><h3 id="m-title"></h3><button id="m-close" aria-label="إغلاق">✕</button></div>
+      <div id="m-body"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
